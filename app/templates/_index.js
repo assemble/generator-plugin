@@ -7,17 +7,13 @@
  * Licensed under the <%= licenseType %> license.
  */
 
-var assemble = require('../../assemble');
-
 var options = {
-  stages: [
-    // assemble.utils.plugins.stages.optionsPreConfiguration,
-    // assemble.utils.plugins.stages.optionsPostConfiguration,
-    // 'assemble:*:pages'
-    <% forEach(var stage in stages) { %>
-    	'<%= stage %>'
-  	<% } %>
-  ]
+  // stages: [
+  //   // assemble.utils.plugins.stages.optionsPreConfiguration,
+  //   // assemble.utils.plugins.stages.optionsPostConfiguration,
+  //   // 'assemble:*:pages'
+  // ]
+  stages: ['<%= stages.join("','") %>']
 };
 
 var plugin = module.exports = function(assemble) {

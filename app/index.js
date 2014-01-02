@@ -54,6 +54,30 @@ PluginGenerator.prototype.askFor = function askFor() {
       message: 'How would you describe your plugin?'
     },
     {
+      type: 'checkbox',
+      name: 'stages',
+      message: 'What stages will your plugin run in?',
+      'default': 'assemble:before:page',
+      choices: [
+        'options:before:configuration',
+        'options:after:configuration',
+        'assemble:before:layout',
+        'assemble:after:layout',
+        'assemble:before:partials',
+        'assemble:after:partials',
+        'assemble:before:data',
+        'assemble:after:data',
+        'assemble:before:pages',
+        'assemble:before:page',
+        'assemble:after:page',
+        'assemble:after:pages',
+        'render:before:pages',
+        'render:before:page',
+        'render:after:page',
+        'render:after:pages'
+      ]
+    },
+    {
       name: 'user',
       message: 'What user/org will your plugin live under?'
     },
