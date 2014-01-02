@@ -1,6 +1,7 @@
 {
-  "name": "package",
+  "name": "<%= _.slugify(fullName) %>",
   "version": "0.0.0",
-  "dependencies": {}
+  "dependencies": {
+  }
 }
 
