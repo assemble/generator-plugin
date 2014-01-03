@@ -1,9 +1,9 @@
 /*
  * Assemble Plugin: <%= _.slugify(fullName) %>
- * <%= _.slugify(homepage) %>
+ * <%= homepage %>
  * Assemble is the 100% JavaScript static site generator for Node.js, Grunt.js, and Yeoman.
  *
- * Copyright (c) <%= (new Date).getYear() %> <%= contributors %>
+ * Copyright (c) <%= (new Date).getFullYear() %> <%= contributors %>
  * Licensed under the <%= licenseType %> license.
  */
 

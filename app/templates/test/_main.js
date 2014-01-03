@@ -1,4 +1,11 @@
-
+/*
+ * Assemble Plugin: <%= _.slugify(fullName) %>
+ * <%= homepage %>
+ * Assemble is the 100% JavaScript static site generator for Node.js, Grunt.js, and Yeoman.
+ *
+ * Copyright (c) <%= (new Date).getFullYear() %> <%= contributors %>
+ * Licensed under the <%= licenseType %> license.
+ */
 
 var expect = require('chai').expect;
 
