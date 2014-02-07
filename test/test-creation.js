@@ -6,6 +6,7 @@ var helpers = require('yeoman-generator').test;
 
 
 describe('plugin generator', function () {
+
     beforeEach(function (done) {
         helpers.testDirectory(path.join(__dirname, 'temp'), function (err) {
             if (err) {
@@ -20,18 +21,36 @@ describe('plugin generator', function () {
     });
 
     it('creates expected files', function (done) {
+
         var expected = [
             // add files you expect to exist here.
             '.jshintrc',
-            '.editorconfig'
+            '.editorconfig',
+            '.gitignore',
+            'LICENSE-MIT',
+            'bower.json',
+            'test/main.js',
+            'index.js'
         ];
 
         helpers.mockPrompt(this.app, {
-            'someOption': true
+            pluginName: 'myPlugin',
+            fullName: 'assemble-plugin-myPlugin',
+            description: 'The best plugin ever',
+            user: 'assemble',
+            stages: ['render:after:pages'],
+            homepage: 'https://github.com/assemble/assemble-plugin-myPlugin',
+            repositoryUrl: 'https://github.com/assemble/assemble-plugin-myPlugin.git',
+            bugUrl: 'https://github.com/assemble/assemble-plugin-myPlugin/issues',
+            licenseType: 'MIT',
+            licenseUrl: 'https://github.com/assemble/assemble-plugin-myPlugin/blob/master/LICENSE-MIT',
+            contributors: 'assemble'
         });
+
         this.app.options['skip-install'] = true;
+
         this.app.run({}, function () {
-            helpers.assertFiles(expected);
+            helpers.assertFile(expected);
             done();
         });
     });
