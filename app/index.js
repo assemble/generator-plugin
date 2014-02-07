@@ -147,7 +147,6 @@ var PluginGenerator = yeoman.generators.Base.extend({
         this.copy('editorconfig', '.editorconfig');
         this.copy('jshintrc', '.jshintrc');
         this.copy('gitignore', '.gitignore');
-        this.copy('npmignore', '.npmignore');
         this.copy('LICENSE-MIT', 'LICENSE-MIT');
         this.template('Gruntfile.js', 'Gruntfile.js');
     },
