@@ -134,6 +134,7 @@ var PluginGenerator = yeoman.generators.Base.extend({
      * @return {undefined}
      */
     packageManagerConfigs: function () {
+        this.copy('npmignore', '.npmignore');
         this.template('_package.json', 'package.json');
         this.template('_bower.json', 'bower.json');
     },

@@ -27,6 +27,7 @@ describe('plugin generator', function () {
             '.jshintrc',
             '.editorconfig',
             '.gitignore',
+            '.npmignore',
             'LICENSE-MIT',
             'bower.json',
             'test/main.js',
