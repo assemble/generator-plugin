@@ -1,9 +1,12 @@
 {
   "name": "generator-plugin",
   "version": "0.1.0",
-  "description": "A generator for Yeoman",
+  "description": "Yeoman generator for Assemble plugins",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "assemble",
+    "plugin",
+    "plugins"
   ],
   "homepage": "https://github.com/assemble/generator-plugin",
   "bugs": "https://github.com/assemble/generator-plugin/issues",
