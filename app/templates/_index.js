@@ -8,12 +8,7 @@
  */
 
 var options = {
-  // stages: [
-  //   // assemble.utils.plugins.stages.optionsPreConfiguration,
-  //   // assemble.utils.plugins.stages.optionsPostConfiguration,
-  //   // 'assemble:*:pages'
-  // ]
-  stages: ['<%= stages.join("','") %>']
+  events: ['<%= events.join("','") %>']
 };
 
 var plugin = module.exports = function(assemble) {
@@ -23,7 +18,7 @@ var plugin = module.exports = function(assemble) {
     '<%= description %>',
     options,
     function (params, next) {
-     console.log('<%= fullName %>', params.stage);
+     console.log('<%= fullName %>', params.event);
      next();
     }
   );

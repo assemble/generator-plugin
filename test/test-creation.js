@@ -39,7 +39,7 @@ describe('plugin generator', function () {
             fullName: 'assemble-plugin-myPlugin',
             description: 'The best plugin ever',
             user: 'assemble',
-            stages: ['render:after:pages'],
+            events: ['assemble:after:render'],
             homepage: 'https://github.com/assemble/assemble-plugin-myPlugin',
             repositoryUrl: 'https://github.com/assemble/assemble-plugin-myPlugin.git',
             bugUrl: 'https://github.com/assemble/assemble-plugin-myPlugin/issues',
