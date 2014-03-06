@@ -21,7 +21,7 @@ $ npm install -g yo
 
 Yeoman travels light. He didn't pack any generators when he moved in. You can think of a generator like a plug-in. You get to choose what type of application you wish to create, such as a Backbone application or even a Chrome extension.
 
-To install generator-helper from npm, run:
+To install generator-plugin from npm, run:
 
 ```
 $ npm install -g generator-plugin
@@ -66,4 +66,4 @@ Released under the MIT license
 
 ***
 
-_This file was generated on 2014-03-04._
+_This file was generated on 2014-03-06._
